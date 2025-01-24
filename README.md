@@ -1,3 +1,6 @@
+SCT211-0420/2023 Lincoln Muraguri
+SCT211-0239/2023 Bryan Kweri                           
+                                
                                 Django Project Documentation
 Project Overview
 This Django project is a web application that helps users to select diseases and corresponding treatments. The user can enter personal details, select a disease, and get treatment information. The application also provides server-side validation to ensure the accuracy and integrity of the data provided.
@@ -57,3 +60,4 @@ If you're getting a CSRF token error:
 Ensure that {% csrf_token %} is included inside the form tag in your HTML templates.
                                 Conclusion
 This Django project helps users input their details, select a disease, and view the related treatment. By following the steps above, you should be able to run the project locally and contribute further to its development.
+
