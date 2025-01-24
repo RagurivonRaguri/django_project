@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      {%load static%}
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href = "{% static 'index.css' %}">
+      <link rel="stylesheet" href="{% static 'responsive.css' %}">
+    <title>Disease and Treatment Selection</title>
+</head>
+<body>
+    {% if error %}
+        <h1>Error</h1>
+        <p>{{ error }}</p>
+    {% else %}
+        <h1>Welcome to MyPersonal Doctor</h1>
+        <p>Enter your details to get healthier today.</p>
+
+        <form action="/validate_form" method="post">
+            {% csrf_token %}
+            
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="John Doe" maxlength="30" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" maxlength="50" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Password" minlength="6" required>
+            </fieldset>
+            
+            <!-- Disease and Treatment Selection -->
+            <fieldset>
+                <legend>Disease Selection</legend>
+                <label for="disease">Select Disease:</label>
+                <select name="disease" id="disease" required>
+                    <option value="Flu">Flu</option>
+                    <option value="Diabetes">Diabetes</option>
+                </select>
+                <br>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+        </form>
+    {% endif %}
+</body>
+</html>
+

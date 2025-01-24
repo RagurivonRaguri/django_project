@@ -1,0 +1,118 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* styling for the external div dividing the page */
+#external{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;  
+}
+/* styling for the div containing the form */
+.signin{
+    /* display: flex; */
+    flex: 1;
+    /* height: 900px; */
+    margin: 20px;
+
+}
+/* styling for second half of the page */
+.image{
+    justify-content: center;
+    /* background-color: yellow; */
+    flex: 3; 
+    margin:30px;
+}
+.image {
+    background-image: url(./img/responsive1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border-radius: 10px;
+}
+
+/* styling for section one conatins logo  */
+.section_one{
+    display: flex; 
+    height: 20%;
+    background-color: white;
+    flex-direction: row;
+}
+.section_one img{
+    height: 100px;
+    width: 150px;
+}
+/* styling for section two */
+.section_two{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    height:80% ;
+    background-color: aquamarine;
+    border-radius: 15px;
+}
+.section_two h1{
+    color: gray;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: oblique;
+    font-family: cursive;
+    margin-top: 100px;
+    text-align: center;
+    text-decoration: underline;
+}
+.section_two p{
+    color: grey;
+    font-weight: 100;
+    font-size: 20px;
+    font-style: italic;
+    font-family: cursive;
+    /* margin-bottom: 50px; */
+    text-align: center;
+}
+.section_two form{
+    display: grid;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding: 50px;
+    margin-bottom:100px ;
+}
+.signin .section_two legend{
+    margin: 10px;
+    /* font-size: 20px; */
+    color: grey;
+    /* font-weight: 50; */
+    font-size: 15px;
+    font-style: oblique;
+    font-family: fantasy;
+}
+.signin .section_two label{
+    margin: 10px;
+    /* font-size: 20px; */
+    color: grey;
+    /* font-weight: 50; */
+    font-size: 15px;
+    font-style: oblique;
+    font-family: fantasy;
+}
+.signin .section_two input{
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+}
+#button{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 20px;
+    /* border: 1px; */
+    border-radius: 10px;
+    background-color: grey;
+    width: 200px;
+}
+

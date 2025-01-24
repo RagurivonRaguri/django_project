@@ -1,0 +1,34 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#err{
+    background-color: red;
+    height: 20%;
+}
+#err2{
+    background-color: beige;
+    height: 80%;
+}
+#error{
+    border: 2px black ;
+    border-radius: 8px;
+    margin-top: 200px;
+    box-shadow: -5px -5px 20px 10px rgba(255, 0, 0, 0.5) ;
+    width: 600px;
+    height: 400px;
+}
+body h1{
+    font-size: 40px;
+    font-family: serif;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}

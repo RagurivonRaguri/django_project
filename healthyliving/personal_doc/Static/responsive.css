@@ -1,0 +1,96 @@
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    *{
+        padding:0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #external{
+        background-image: url(./img/responsive1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-around; */
+        /* height: 800px; */
+        background-color: aqua;
+        /* height: 800px; */
+        
+    }
+    .signin{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 2px black;
+        border-radius: 5px;
+        opacity: 0.5;
+        
+    }
+    .section_one{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        /* opacity: 0.5; */
+    }
+    .section_two{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        /* opacity: 0.5; */
+    }
+    .section_two h1{
+        color: black;
+        font-size: 30px;
+        font-weight: 400;
+        font-style: oblique;
+        font-family: cursive;
+        margin-top: 50px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .section_two p{
+        color:black;
+        font-weight: 100;
+        font-size: 20px;
+        font-style: italic;
+        font-family: cursive;
+        /* margin-bottom: 50px; */
+        text-align: center;
+    }
+    .signin .section_two legend{
+        margin: 10px;
+        /* font-size: 20px; */
+        color: black;
+        /* font-weight: 50; */
+        font-size: 15px;
+        font-style: oblique;
+        font-family: fantasy;
+    }
+    .signin .section_two label{
+        margin: 10px;
+        /* font-size: 20px; */
+        color: black;
+        /* font-weight: 50; */
+        font-size: 15px;
+        font-style: oblique;
+        font-family: fantasy;
+    }
+    #button{
+        font-size: 20px;
+        color: white;
+        padding: 20px;
+        margin: 10px;
+        margin-top: 20px;
+        /* border: 1px; */
+        border-radius: 10px;
+        background-color: aqua;
+        width: 200px;
+    }
+
+    .image{
+        display: none;
+    }
+}
